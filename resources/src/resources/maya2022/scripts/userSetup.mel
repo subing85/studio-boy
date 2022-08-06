@@ -1,0 +1,3 @@
+print "\n#: Studio Pipe Maya maya2022 Startup\n";
+python("from startup.maya2022 import setup");
+print "\n#: Stuio-Pipe Maya maya2022 Startup Done!...\n";

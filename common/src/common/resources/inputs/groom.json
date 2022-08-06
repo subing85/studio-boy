@@ -1,0 +1,175 @@
+{
+    "copyright": "Copyright (c) 2022, https:://www.subins-toolkits.com All rights reserved.",
+    "author": "Author: Subin. Gopi (subing85@gmail.com).",
+    "header": "Studio-Pipe Project Management in-house Tool.",
+    "lastModified": "2022:January:04:Tuesday-04:52:06:PM.",
+    "warning": "All changes made in this file will be lost!.",
+    "description": "inputs of the modeling render.",
+    "enable": true,
+    "type": "imageComposition",
+    "data": [
+        {
+            "label": "look",
+            "name": "image",
+            "type": "render",
+            "format": "image",
+            "extension": "tga",
+            "compression": "Targa",
+            "outputExtension": "jpg",
+            "percent": 100,
+            "quality": 100,
+            "padding": 5,
+            "resolution": [
+                1024,
+                1024
+            ],
+            "frame": 1001,
+            "enable": true,
+            "project_size": "medium",
+            "studio_size": "medium",
+            "project_positions": [
+                "left",
+                "bottom"
+            ],
+            "studio_positions": [
+                "right",
+                "bottom"
+            ],
+            "watermark": [
+                {
+                    "name": "user",
+                    "font": "arialbd.ttf",
+                    "encoding": "unic",
+                    "size": "medium",
+                    "positions": [
+                        "left",
+                        "top"
+                    ],
+                    "spacing": 8,
+                    "align": "left",
+                    "color": "black",
+                    "stroke_width": 0,
+                    "enable": true
+                },
+                {
+                    "name": "task",
+                    "font": "arialbd.ttf",
+                    "encoding": "unic",
+                    "size": "medium",
+                    "positions": [
+                        "right",
+                        "top"
+                    ],
+                    "spacing": 8,
+                    "align": "right",
+                    "color": "black",
+                    "stroke_width": 0,
+                    "enable": true
+                },
+                {
+                    "name": "frame",
+                    "font": "arialbd.ttf",
+                    "encoding": "unic",
+                    "size": "medium",
+                    "positions": [
+                        "middle",
+                        "bottom"
+                    ],
+                    "spacing": 8,
+                    "align": "center",
+                    "color": "black",
+                    "stroke_width": 0,
+                    "enable": true
+                }
+            ]
+        },
+        {
+            "label": "turnaround",
+            "name": "movie",
+            "type": "render",
+            "format": "image",
+            "extension": "tga",
+            "compression": "Targa",
+            "outputExtension": "mov",
+            "percent": 100,
+            "quality": 100,
+            "padding": 5,
+            "resolution": [
+                512,
+                512
+            ],
+            "fstart": 1001,
+            "fend": 1090,
+            "kstart": 0,
+            "kend": 360,
+            "enable": true,
+            "project_size": "medium",
+            "studio_size": "medium",
+            "project_positions": [
+                "left",
+                "bottom"
+            ],
+            "studio_positions": [
+                "right",
+                "bottom"
+            ],
+            "watermark": [
+                {
+                    "name": "user",
+                    "font": "arialbd.ttf",
+                    "encoding": "unic",
+                    "size": "medium",
+                    "positions": [
+                        "left",
+                        "top"
+                    ],
+                    "spacing": 8,
+                    "align": "left",
+                    "color": "black",
+                    "stroke_width": 0,
+                    "enable": true
+                },
+                {
+                    "name": "task",
+                    "font": "arialbd.ttf",
+                    "encoding": "unic",
+                    "size": "medium",
+                    "positions": [
+                        "right",
+                        "top"
+                    ],
+                    "spacing": 8,
+                    "align": "right",
+                    "color": "black",
+                    "stroke_width": 0,
+                    "enable": true
+                },
+                {
+                    "name": "frame",
+                    "font": "arialbd.ttf",
+                    "encoding": "unic",
+                    "size": "medium",
+                    "positions": [
+                        "middle",
+                        "bottom"
+                    ],
+                    "spacing": 8,
+                    "align": "center",
+                    "color": "black",
+                    "stroke_width": 0,
+                    "enable": true
+                }
+            ]
+        },
+        {
+            "label": null,
+            "entity-name": true,
+            "name": "scene",
+            "type": "mayaScene",
+            "extension": "ma",
+            "format": "mayaAscii",
+            "preserve_rferences": false,
+            "label": "shader"
+        }
+    ]
+}

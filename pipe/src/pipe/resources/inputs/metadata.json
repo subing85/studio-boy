@@ -1,0 +1,89 @@
+{
+    "copyright": "Copyright (c) 2022, https:://www.subins-toolkits.com All rights reserved.",
+    "author": "Author: Subin. Gopi (subing85@gmail.com).",
+    "header": "Studio-Pipe Project Management in-house Tool.",
+    "lastModified": "2022:January:04:Tuesday-04:56:44:PM.",
+    "warning": "All changes made in this file will be lost!.",
+    "description": "inputs of the asset version metadate.",
+    "enable": true,
+    "type": "metadate",
+    "data": [
+        {
+            "name": "kind",
+            "order": 1,
+            "display-name": "kind",
+            "enable": true,
+            "description": "current asset version kind type (submit or publish)"
+        },
+        {
+            "name": "version",
+            "order": 2,
+            "display-name": "version",
+            "enable": true,
+            "description": "current asset version"
+        },
+        {
+            "name": "start-by",
+            "order": 3,
+            "display-name": "start-by",
+            "enable": true,
+            "description": "current task start user (assignee)"
+        },
+        {
+            "name": "start-at",
+            "order": 4,
+            "display-name": "start-date",
+            "enable": true,
+            "description": "current task started date"
+        },
+        {
+            "name": "status",
+            "order": 5,
+            "display-name": "status",
+            "enable": true,
+            "description": "current task status"
+        },
+        {
+            "name": "status-by",
+            "order": 6,
+            "display-name": "status-by",
+            "enable": true,
+            "description": "current task status by"
+        },
+        {
+            "name": "status-at",
+            "order": 7,
+            "display-name": "status-at",
+            "enable": true,
+            "description": "current task status date"
+        },
+        {
+            "name": "released-by",
+            "order": 8,
+            "display-name": "released-by",
+            "enable": true,
+            "description": "current task released user"
+        },
+        {
+            "name": "released-at",
+            "order": 9,
+            "display-name": "released-at",
+            "enable": true,
+            "description": "current task released date"
+        },
+        {
+            "name": "dependency",
+            "order": 10,
+            "display-name": "dependency",
+            "enable": true,
+            "description": "only for publish kind, what submit version is used to publish"
+        },
+        {
+            "name": "comments",
+            "order": 11,
+            "display-name": "comments",
+            "enable": true,
+            "description": "user comments"
+        }
+    ]
+}

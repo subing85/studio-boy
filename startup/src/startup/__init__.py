@@ -1,0 +1,2 @@
+REPOSITORY = "startup"
+BYPASS = True

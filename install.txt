@@ -1,0 +1,54 @@
+set PATH=Z:\devkit\module\software\python\python-3.7.8-amd64\Scripts;Z:\devkit\module\software\python\python-3.7.8-amd64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Git\cmd;C:\Users\sid\AppData\Local\Microsoft\WindowsApps;C:\your\path\here";C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Git\cmd;C:\Users\sid\AppData\Local\Microsoft\WindowsApps;
+
+
+set PATH=Z:\devkit\module\software\python\python-3.7.7-amd64\Scripts;Z:\devkit\module\software\python\python-3.7.7-amd64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Git\cmd;C:\Users\sid\AppData\Local\Microsoft\WindowsApps;C:\your\path\here";C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Git\cmd;C:\Users\sid\AppData\Local\Microsoft\WindowsApps;
+
+cd C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64
+
+cd /d E:\venture\source_code\studio-pipe\devkit\module\software\python\python-3.7.7-amd64
+
+
+python -m pip --version
+python.exe -m pip install --upgrade pip
+
+python -m pip install PySide2
+
+for maya 2022
+python -m pip install PySide2==5.15.2
+
+python -m pip install python-git
+python -m pip install GitPython
+	
+python -m pip install numpy
+python -m pip install Pillow
+
+python -m pip install pywin32
+python -m pip install pyinstaller
+
+
+	
+python -m pip install opencv-python
+
+python -m pip install ftrack-python-api
+python -m pip install py-shotgun
+
+or
+python -m pip install git+git://github.com/shotgunsoftware/python-api.git
+
+python -m pip install auto-py-to-exe
+or
+
+git clone https://github.com/brentvollebregt/auto-py-to-exe.git
+cd auto-py-to-exe
+python setup.py install
+
+python -m pip install black
+python -m pip install autoflake
+
+
+python -m pip install --upgrade python-gitlab
+git clone https://github.com/python-gitlab/python-gitlab
+cd python-gitlab
+python -m python setup.py install
+
+python -m pip install python-gitlab

@@ -1,0 +1,186 @@
+{
+    "copyright": "Copyright (c) 2022, https:://www.subins-toolkits.com All rights reserved.",
+    "author": "Author: Subin. Gopi (subing85@gmail.com).",
+    "header": "Studio-Pipe Project Management in-house Tool.",
+    "lastModified": "2022:January:04:Tuesday-04:50:19:PM.",
+    "warning": "All changes made in this file will be lost!.",
+    "description": "inputs of the studio-pipe launcher.",
+    "enable": true,
+    "type": "tool",
+    "data": [
+        {
+            "order": 1,
+            "name": "browser",
+            "label": "Pipe-Browser",
+            "enable": true,
+            "location": "%LIBRARY-PATH%/library/applications/browser.bat",
+            "icon": "browser.png",
+            "envs": null
+        },
+        {
+            "order": 2,
+            "name": "mysteps",
+            "label": "My-Steps",
+            "enable": true,
+            "location": "%LIBRARY-PATH%/library/applications/mysteps.bat",
+            "icon": "mysteps.png",
+            "envs": null
+        },
+        {
+            "order": 3,
+            "name": "maya2018",
+            "label": "Maya2018",
+            "enable": true,
+            "location": "%LIBRARY-PATH%/library/applications/maya2018.bat",
+            "icon": "maya2018.png",
+            "envs": [
+                {
+                    "env": "MAYA_VERSION",
+                    "value": "maya2018",
+                    "enable": true
+                },
+                {
+                    "env": "MAYA_PLUG_IN_PATH",
+                    "value": [
+                        "%RESOURCES-PATH%/resources/maya2018/plug-ins"
+                    ],
+                    "enable": true
+                },
+                {
+                    "env": "MAYA_SCRIPT_PATH",
+                    "value": "%RESOURCES-PATH%/resources/maya2018/scripts",
+                    "enable": true
+                },
+                {
+                    "env": "MAYA_SHELF_PATH",
+                    "value": [
+                        "%RESOURCES-PATH%/resources/maya2018/shelves"
+                    ],
+                    "enable": true
+                },
+                {
+                    "env": "XBMLANGPATH",
+                    "value": [
+                        "%RESOURCES-PATH%/resources/resourcesmaya2018/icons"
+                    ],
+                    "enable": true
+                },
+                {
+                    "env": "PYTHONPATH",
+                    "value": null,
+                    "enable": false
+                },                
+                {
+                    "env": "OVERRIDE",
+                    "enable": true,
+                    "override": "PYTHONPATH",
+                    "value": [
+                        "%DEVKIT-PATH%/module/software/python/Python27amd64/Lib/site-packages"
+                    ]
+                }
+            ]
+        },
+        {
+            "order": 4,
+            "name": "maya2022",
+            "label": "Maya2022",
+            "enable": true,
+            "location": "%LIBRARY-PATH%/library/applications/maya2022.bat",
+            "icon": "maya2022.png",
+            "envs": [
+                {
+                    "env": "MAYA_VERSION",
+                    "value": "maya2022",
+                    "enable": true
+                },
+                {
+                    "env": "MAYA_PLUG_IN_PATH",
+                    "value": [
+                        "%RESOURCES-PATH%/resources/maya2022/plug-ins"
+                    ],
+                    "enable": true
+                },
+                {
+                    "env": "MAYA_SCRIPT_PATH",
+                    "value": "%RESOURCES-PATH%/resources/maya2022/scripts",
+                    "enable": true
+                },
+                {
+                    "env": "MAYA_SHELF_PATH",
+                    "value": [
+                        "%RESOURCES-PATH%/resources/maya2022/shelves"
+                    ],
+                    "enable": true
+                },
+                {
+                    "env": "XBMLANGPATH",
+                    "value": [
+                        "%RESOURCES-PATH%/resources/maya2022/icons"
+                    ],
+                    "enable": true
+                },                
+                {
+                    "env": "PYTHONPATH",
+                    "enable": true,
+                    "value": [
+                    	"%DEVKIT-PATH%/module/software/python/python-3.7.7-amd64",
+                    	"%DEVKIT-PATH%/module/software/python/python-3.7.7-amd64/Scripts",
+                    	"%DEVKIT-PATH%/module/software/python/python-3.7.7-amd64/Lib",
+                    	"%DEVKIT-PATH%/module/software/python/python-3.7.7-amd64/Lib/site-packages"
+                     ]
+                },
+                {
+                    "env": "OVERRIDE",
+                    "enable": false,
+                    "override": "PYTHONPATH",
+                    "value": null
+                }
+            ]
+        },
+        {
+            "order": 5,
+            "name": "blender2.90.0",
+            "label": "Blender-2.90.0",
+            "enable": true,
+            "location": "%LIBRARY-PATH%/library/applications/blender2.90.0.bat",
+            "icon": "blender2.90.0.png",
+            "envs": null
+        },
+        {
+            "order": 6,
+            "name": "gimp2.8",
+            "label": "Gimp2.8",
+            "enable": true,
+            "location": "%LIBRARY-PATH%/library/applications/gimp2.8.bat",
+            "icon": "gimp2.8.png",
+            "envs": null
+        },
+        {
+            "order": 7,
+            "name": "startup",
+            "label": "Startup",
+            "enable": true,
+            "location": "%LIBRARY-PATH%/library/applications/startup.bat",
+            "icon": "startup.png",
+            "envs": null
+        },
+        {
+            "order": 8,
+            "name": "python3.7.8.png",
+            "label": "Python-3.7.8",
+            "enable": true,
+            "location": "%LIBRARY-PATH%/library/applications/python3.7.8.bat",
+            "icon": "python3.7.8.png",
+            "envs": null
+        },
+        {
+            "order": 9,
+            "name": "idle",
+            "label": "IDLE",
+            "enable": true,
+            "location": "%LIBRARY-PATH%/library/applications/idle.bat",
+            "icon": "python-IDLE.png",
+            "envs": null
+        }
+    ]
+}

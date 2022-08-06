@@ -1,0 +1,36 @@
+{
+    "copyright": "Copyright (c) 2022, https:://www.subins-toolkits.com All rights reserved.",
+    "author": "Author: Subin. Gopi (subing85@gmail.com).",
+    "header": "Studio-Pipe Project Management in-house Tool.",
+    "lastModified": "2022:January:04:Tuesday-05:04:00:PM.",
+    "warning": "All changes made in this file will be lost!.",
+    "description": "inputs of the login user environmanet.",
+    "enable": true,
+    "type": "login",
+    "data": [
+        {
+            "name": "email",
+            "order": 1,
+            "env": "PIPE-USER-EMAIL",
+            "enable": true
+        },
+        {
+            "name": "id",
+            "order": 2,
+            "env": "PIPE-USER-ID",
+            "enable": true
+        },
+        {
+            "name": "username",
+            "order": 3,
+            "env": "PIPE-USER-NAME",
+            "enable": true
+        },
+        {
+            "name": "discipline",
+            "order": 4,
+            "env": "PIPE-USER-DISCIPLINE",
+            "enable": true
+        }
+    ]
+}

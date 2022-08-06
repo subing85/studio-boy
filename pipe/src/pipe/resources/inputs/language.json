@@ -1,0 +1,48 @@
+{
+    "copyright": "Copyright (c) 2022, https:://www.subins-toolkits.com All rights reserved.",
+    "author": "Author: Subin. Gopi (subing85@gmail.com).",
+    "header": "Studio-Pipe Project Management in-house Tool.",
+    "lastModified": "2022:January:04:Tuesday-04:56:08:PM.",
+    "warning": "All changes made in this file will be lost!.",
+    "description": "inputs of the languages",
+    "enable": true,
+    "type": "language",
+    "data": [
+        {
+            "display-name": "US English",
+            "name": "en_US",
+            "order": 1,
+            "env": "STUIO-PIPE-LANGUAGE",
+            "value": "en_US",
+            "maya": {
+                "env": "MAYA_UI_LANGUAGE",
+                "value": "en_US"
+            },
+            "enable": true
+        },
+        {
+            "display-name": "Simplified Chinese",
+            "name": "zh_CN",
+            "order": 2,
+            "env": "STUIO-PIPE-LANGUAGE",
+            "value": "zh_CN",
+            "maya": {
+                "env": "MAYA_UI_LANGUAGE",
+                "value": "zh_CN"
+            },
+            "enable": true
+        },
+        {
+            "display-name": "Japanese",
+            "name": "ja_JP",
+            "order": 3,
+            "env": "STUIO-PIPE-LANGUAGE",
+            "value": "ja_JP",
+            "maya": {
+                "env": "MAYA_UI_LANGUAGE",
+                "value": "ja_JP"
+            },
+            "enable": true
+        }
+    ]
+}

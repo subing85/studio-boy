@@ -1,0 +1,386 @@
+{
+    "copyright": "Copyright (c) 2022, https:://www.subins-toolkits.com All rights reserved.",
+    "author": "Author: Subin. Gopi (subing85@gmail.com).",
+    "header": "Studio-Pipe Project Management in-house Tool.",
+    "lastModified": "2022:January:04:Tuesday-04:52:23:PM.",
+    "warning": "All changes made in this file will be lost!.",
+    "description": "inputs of the publish data components.",
+    "enable": true,
+    "type": "components",
+    "data": [
+        {
+            "name": "ConceptArt",
+            "enable": true,
+            "order": 1,
+            "template": "Character",
+            "AssetType": "Edit",
+            "components": [
+                {
+                    "name": "look",
+                    "code": "image",
+                    "display-name": "Look",
+                    "type": "path",
+                    "formats": [
+                        ".jpg",
+                        ".png"
+                    ]
+                },
+                {
+                    "name": "turnaround",
+                    "code": "image",
+                    "display-name": "Turnaround",
+                    "type": "path",
+                    "formats": [
+                        ".jpg",
+                        ".png"
+                    ]
+                },
+                {
+                    "name": "lineup",
+                    "code": "image",
+                    "display-name": "Lineup",
+                    "type": "path",
+                    "formats": [
+                        ".jpg",
+                        ".png"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Modeling",
+            "enable": true,
+            "order": 2,
+            "template": "Character",
+            "AssetType": "Scene",
+            "components": [
+                {
+                    "name": "look",
+                    "code": "image",
+                    "display-name": "Look",
+                    "type": "path",
+                    "formats": [
+                        ".jpg",
+                        ".png"
+                    ]
+                },
+                {
+                    "name": "turnaround",
+                    "code": "mov",
+                    "display-name": "MOV",
+                    "type": "path",
+                    "formats": [
+                        ".mov",
+                        ".avi"
+                    ]
+                },
+                {
+                    "name": "mayafile",
+                    "code": "mayaAscii",
+                    "display-name": "Maya-File",
+                    "type": "path",
+                    "formats": [
+                        ".ma",
+                        ".mb"
+                    ],
+                    "entity-name": true
+                }
+            ]
+        },
+        {
+            "name": "Lookdev",
+            "enable": true,
+            "order": 3,
+            "template": "Character",
+            "AssetType": "Scene",
+            "components": [
+                {
+                    "name": "look",
+                    "code": "image",
+                    "display-name": "Look",
+                    "type": "path",
+                    "formats": [
+                        ".jpg",
+                        ".png"
+                    ]
+                },
+                {
+                    "name": "turnaround",
+                    "code": "mov",
+                    "display-name": "MOV",
+                    "type": "path",
+                    "formats": [
+                        ".mov",
+                        ".avi"
+                    ]
+                },
+                {
+                    "name": "mayafile",
+                    "display-name": "Maya-File",
+                    "code": "mayaAscii",
+                    "type": "path",
+                    "entity-name": true,
+                    "formats": [
+                        ".ma"
+                    ]
+                },
+                {
+                    "name": "shader",
+                    "code": "mayaAscii",
+                    "display-name": "Maya-Shader",
+                    "type": "path",
+                    "formats": [
+                        ".ma"
+                    ]
+                },
+                {
+                    "name": "shader",
+                    "code": "json",
+                    "display-name": "Shader",
+                    "type": "path",
+                    "formats": [
+                        ".json"
+                    ]
+                },
+                {
+                    "name": "sourceimages",
+                    "code": "images",
+                    "display-name": "Source-Images",
+                    "type": "dirname",
+                    "formats": [
+                        ".jpg",
+                        ".png"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Puppet",
+            "enable": true,
+            "order": 4,
+            "template": "Character",
+            "AssetType": "Scene",
+            "components": [
+                {
+                    "name": "look",
+                    "code": "image",
+                    "display-name": "Look",
+                    "type": "path",
+                    "formats": [
+                        ".jpg",
+                        ".png"
+                    ]
+                },
+                {
+                    "name": "turnaround",
+                    "code": "mov",
+                    "display-name": "MOV",
+                    "type": "path",
+                    "formats": [
+                        ".mov",
+                        ".avi"
+                    ]
+                },
+                {
+                    "name": "pose",
+                    "code": "json",
+                    "display-name": "Default-Pose",
+                    "type": "path",
+                    "formats": [
+                        ".json"
+                    ]
+                },
+                {
+                    "name": "mayafile",
+                    "code": "mayaAscii",
+                    "display-name": "Maya-File",
+                    "type": "path",
+                    "entity-name": true,
+                    "formats": [
+                        ".ma"
+                    ]
+                },
+                {
+                    "name": "sourceimages",
+                    "code": "images",
+                    "display-name": "Source-Images",
+                    "type": "dirname",
+                    "formats": [
+                        ".jpg",
+                        ".png"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Layout",
+            "enable": true,
+            "order": 5,
+            "template": "3D",
+            "AssetType": "Scene",
+            "components": [
+                {
+                    "name": "look",
+                    "code": "image",
+                    "display-name": "Look",
+                    "type": "path",
+                    "formats": [
+                        ".jpg",
+                        ".png"
+                    ]
+                },
+                {
+                    "name": "preview",
+                    "code": "mov",
+                    "display-name": "Preview",
+                    "type": "path",
+                    "formats": [
+                        ".mov",
+                        ".avi"
+                    ]
+                },
+                {
+                    "name": "castingsheet",
+                    "code": "json",
+                    "display-name": "Casting-Sheet",
+                    "type": "path",
+                    "formats": [
+                        ".json"
+                    ]
+                },
+                {
+                    "name": "mayafile",
+                    "code": "mayaAscii",
+                    "display-name": "Maya-File",
+                    "type": "path",
+                    "entity-name": true,
+                    "formats": [
+                        ".ma"
+                    ]
+                },
+                {
+                    "name": "animation",
+                    "code": "json",
+                    "display-name": "Anim",
+                    "type": "dirname",
+                    "formats": [
+                        ".json"
+                    ]
+                },
+                {
+                    "name": "cache",
+                    "code": "cache",
+                    "display-name": "Cache",
+                    "type": "dirname",
+                    "formats": [
+                        ".abc"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Animation",
+            "enable": true,
+            "order": 6,
+            "template": "3D",
+            "AssetType": "Scene",
+            "components": [
+                {
+                    "name": "look",
+                    "code": "image",
+                    "display-name": "Look",
+                    "type": "path",
+                    "formats": [
+                        ".jpg",
+                        ".png"
+                    ]
+                },
+                {
+                    "name": "preview",
+                    "code": "mov",
+                    "display-name": "Preview",
+                    "type": "path",
+                    "formats": [
+                        ".mov",
+                        ".avi"
+                    ]
+                },
+                {
+                    "name": "castingsheet",
+                    "code": "json",
+                    "display-name": "Casting-Sheet",
+                    "type": "path",
+                    "formats": [
+                        ".json"
+                    ]
+                },
+                {
+                    "name": "mayafile",
+                    "code": "mayaAscii",
+                    "display-name": "Maya-File",
+                    "type": "path",
+                    "entity-name": true,
+                    "formats": [
+                        ".ma"
+                    ]
+                },
+                {
+                    "name": "cache",
+                    "code": "cache",
+                    "display-name": "Cache",
+                    "type": "dirname",
+                    "formats": [
+                        ".abc"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Rendering",
+            "enable": true,
+            "order": 7,
+            "template": "3D",
+            "AssetType": "Scene",
+            "components": [
+                {
+                    "name": "look",
+                    "code": "image",
+                    "display-name": "Look",
+                    "type": "path",
+                    "formats": [
+                        ".jpg",
+                        ".png"
+                    ]
+                },
+                {
+                    "name": "castingsheet",
+                    "code": "json",
+                    "display-name": "Casting-Sheet",
+                    "type": "path",
+                    "formats": [
+                        ".json"
+                    ]
+                },
+                {
+                    "name": "mayafile",
+                    "code": "mayaAscii",
+                    "display-name": "Maya-File",
+                    "type": "path",
+                    "entity-name": true,
+                    "formats": [
+                        ".ma"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Compositing",
+            "enable": true,
+            "order": 8,
+            "template": "3D",
+            "AssetType": "Scene",
+            "components": [
+            ]
+        }
+    ]
+}

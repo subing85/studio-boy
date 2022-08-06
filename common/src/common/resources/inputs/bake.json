@@ -1,0 +1,263 @@
+{
+    "copyright": "Copyright (c) 2022, https:://www.subins-toolkits.com All rights reserved.",
+    "author": "Author: Subin. Gopi (subing85@gmail.com).",
+    "header": "Studio-Pipe Project Management in-house Tool.",
+    "lastModified": "2022:January:04:Tuesday-04:52:06:PM.",
+    "warning": "All changes made in this file will be lost!.",
+    "description": "inputs of the scene bake.",
+    "enable": true,
+    "type": "bake",
+    "data": [
+        {
+            "order": 1,
+            "name": "Modeling",
+            "label": "Modeling",
+            "enable": true,
+            "icon": "model.png",
+            "task": [
+                {
+                    "name": "get",
+                    "event": "common.scripts.tasks.Query"
+                },
+                {
+                    "name": "set",
+                    "event": "common.scripts.tasks.Output"
+                }
+            ],
+            "items": [
+                {
+                    "order": 1,
+                    "name": "workspace",
+                    "label": "Workspace",
+                    "enable": true,
+                    "icon": "workspace.png",
+                    "event": "common.scripts.workspace.Workspace"
+                },
+                {
+                    "order": 2,
+                    "name": "look",
+                    "label": "Look",
+                    "enable": true,
+                    "icon": "look.png",
+                    "event": "modeling.scripts.look.ModelLook"
+                },
+                {
+                    "order": 3,
+                    "name": "movie",
+                    "label": "Mov",
+                    "enable": true,
+                    "icon": "movie.png",
+                    "event": "modeling.scripts.preview.ModelMovie"
+                },
+                {
+                    "order": 4,
+                    "name": "exportscene",
+                    "label": "Export-Scene",
+                    "enable": true,
+                    "icon": "model.png",
+                    "event": "modeling.scripts.scene.ModelScene"
+                }
+            ]
+        },
+        {
+            "order": 2,
+            "name": "Lookdev",
+            "label": "Lookdev",
+            "enable": true,
+            "icon": "lookdev.png",
+            "task": [
+                {
+                    "name": "get",
+                    "event": "common.scripts.tasks.Query"
+                },
+                {
+                    "name": "set",
+                    "event": "common.scripts.tasks.Output"
+                }
+            ],
+            "items": [
+                {
+                    "order": 1,
+                    "name": "workspace",
+                    "label": "Workspace",
+                    "enable": true,
+                    "icon": "workspace.png",
+                    "event": "common.scripts.workspace.Workspace"
+                },
+                {
+                    "order": 2,
+                    "name": "look",
+                    "label": "Look",
+                    "enable": true,
+                    "icon": "look.png",
+                    "event": "lookdev.scripts.look.LookdevLook"
+                },
+                {
+                    "order": 3,
+                    "name": "movie",
+                    "label": "Mov",
+                    "enable": true,
+                    "icon": "movie.png",
+                    "event": "lookdev.scripts.preview.LookdevMovie"
+                },
+                {
+                    "order": 4,
+                    "name": "exportscene",
+                    "label": "Export-Shader",
+                    "enable": true,
+                    "icon": "shader.png",
+                    "event": "lookdev.scripts.scene.LookdevShader"
+                },
+                {
+                    "order": 5,
+                    "name": "exportscene",
+                    "label": "Export-Scene",
+                    "enable": true,
+                    "icon": "scene.png",
+                    "event": "lookdev.scripts.scene.LookdevScene"
+                }
+            ]
+        },
+        {
+            "order": 3,
+            "name": "Groom",
+            "label": "Groom",
+            "enable": true,
+            "icon": "groom.png",
+            "task": [
+                {
+                    "name": "get",
+                    "event": "common.scripts.tasks.Query"
+                },
+                {
+                    "name": "set",
+                    "event": "common.scripts.tasks.Output"
+                }
+            ],
+            "items": [
+                {
+                    "order": 1,
+                    "name": "workspace",
+                    "label": "Workspace",
+                    "enable": true,
+                    "icon": "workspace.png",
+                    "event": "common.scripts.workspace.Workspace"
+                },
+                {
+                    "order": 2,
+                    "name": "look",
+                    "label": "Look",
+                    "enable": true,
+                    "icon": "look.png",
+                    "event": "groom.scripts.look.GroomLook"
+                },
+                {
+                    "order": 3,
+                    "name": "movie",
+                    "label": "Mov",
+                    "enable": true,
+                    "icon": "movie.png",
+                    "event": "groom.scripts.preview.GroomMovie"
+                },
+                {
+                    "order": 4,
+                    "name": "exportscene",
+                    "label": "Export-Shader",
+                    "enable": true,
+                    "icon": "shader.png",
+                    "event": "groom.scripts.scene.GroomShader"
+                },
+                {
+                    "order": 5,
+                    "name": "exportscene",
+                    "label": "Export-Scene",
+                    "enable": true,
+                    "icon": "scene.png",
+                    "event": "groom.scripts.scene.GroomScene"
+                }
+            ]
+        },
+        {
+            "order": 4,
+            "name": "Puppet",
+            "label": "Puppet",
+            "enable": true,
+            "icon": "puppet.png",
+            "task": [
+                {
+                    "name": "get",
+                    "event": "common.scripts.tasks.Query",
+                    "changeEvent": "common.scripts.tasks.Query",
+                    "link": "versions"
+                },
+                {
+                    "name": "set",
+                    "event": "common.scripts.tasks.Output"
+                }
+            ],
+            "items": [
+                {
+                    "order": 1,
+                    "name": "workspace",
+                    "label": "Workspace",
+                    "enable": true,
+                    "icon": "workspace.png",
+                    "event": "common.scripts.workspace.Workspace"
+                },
+
+                {
+                    "order": 2,
+                    "name": "versions",
+                    "label": "Lookdev Versions",
+                    "enable": true,
+                    "icon": "versions.png",
+                    "type": "enum",
+                    "event": "common.scripts.tasks.LookdevVersions",
+                    "lable": "Lookdev-Pulish",
+                    "link": true
+                },
+                {
+                    "order": 3,
+                    "name": "pulllookdev",
+                    "label": "Pull-lookdev(LoRes)",
+                    "enable": true,
+                    "icon": "look.png",
+                    "event": "common.scripts.scene.ImportPuppetShader"
+                },
+                {
+                    "order": 4,
+                    "name": "look",
+                    "label": "Look",
+                    "enable": true,
+                    "icon": "look.png",
+                    "event": "puppet.scripts.look.PuppetLook"
+                },
+                {
+                    "order": 5,
+                    "name": "movie",
+                    "label": "Mov",
+                    "enable": true,
+                    "icon": "movie.png",
+                    "event": "puppet.scripts.preview.PuppetMovie"
+                },
+                
+                {
+                    "order": 6,
+                    "name": "exportPose",
+                    "label": "Export-Deafult Pose",
+                    "enable": true,
+                    "icon": "default-pose.png",
+                    "event": "puppet.scripts.scene.PuppetPose"
+                },
+                {
+                    "order": 8,
+                    "name": "exportscene",
+                    "label": "Export-Scene",
+                    "enable": true,
+                    "icon": "scene.png",
+                    "event": "puppet.scripts.scene.PuppetScene"
+                }
+            ]
+        }
+    ]
+}

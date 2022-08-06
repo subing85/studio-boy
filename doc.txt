@@ -1,0 +1,15 @@
+
+project
+    categories (asset, scene, shot)
+        steps [ name of the categories]
+            tasks ["modeling", "layout"]
+                kind ["submit", "publish"]
+                
+                    versions ["0.0.1"]
+                    
+                    
+discipline ["Administrator", "Project Manager", "User", "Restricted User"] 
+
+status ["Not started", "In progress", "Pending Review", "Revise", "Approved", "Completed"]
+
+applications = ["Maya2022", "Blender"]

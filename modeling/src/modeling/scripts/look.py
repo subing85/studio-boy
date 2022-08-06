@@ -1,0 +1,81 @@
+from apis import studio
+from common import resources
+from pipe.core import logger
+from apis.studio import Versions
+from common.pipefile import Create
+from common.collect import Context
+from common.mayaRender import TimeUnit
+from common.mayaRender import Playblast
+
+LOGGER = logger.getLogger(__name__)
+
+
+class ModelLook(object):
+
+    eventEnable = True
+    eventName = "modelLook"
+    eventType = "maya"
+    eventAuthor = "subin gopi"
+
+    input = dict()
+    output = dict()
+
+    @classmethod
+    def execute(cls):
+        task = cls.input.get("task")
+        taskType = cls.input.get("taskType", "modeling").lower()
+
+        Context.configContext(taskType, "image", "playblast")
+
+        if not Context.config:
+            return
+
+        userContext = Context.userContext()
+        taskContext = Context.taskContext(task)
+
+        temp_directory = Create.tempDirectory(taskType)
+        parent_name = task["parent"]["name"]
+
+        filepath = resources.setPathResolver(temp_directory, folders=[parent_name])
+        foregroundi = cls.createForeground(cls, filepath, **Context.config)
+
+        projecti = resources.getProjectImage(task["project"])
+        imageContext = Context.imageContext(projecti, foregroundi)
+
+        context = imageContext
+        context["watermarks"] = [userContext, taskContext]
+
+        filepath = Versions().kindPath("work", task=task)
+
+        filename = Context.config.get("label", parent_name)
+        extension = Context.config.get("outputExtension", "jpg")
+
+        output = resources.setPathResolver(
+            filepath, folders=["%s.%s" % (filename, extension)]
+        )
+
+        Create.directory(output)
+
+        meda = studio.Media()
+        meda.createImage(output, **context)
+        LOGGER.info("success, %s" % output)
+        cls.output["image"] = output
+
+    def createForeground(self, filepath, **kwargs):
+        inputs = {
+            "format": kwargs.get("format", "image"),
+            "widthHeight": kwargs.get("resolution", [1024, 1024]),
+            "fstart": kwargs.get("frame", 1001),
+            "fend": kwargs.get("frame", 1001),
+            "extension": kwargs.get("extension", "tif"),
+            "clearCache": kwargs.get("clearCache", False),
+            "viewer": kwargs.get("viewer", False),
+            "showOrnaments": kwargs.get("showOrnaments", False),
+            "fp": TimeUnit.scene(),
+            "percent": kwargs.get("percent", 100),
+            "compression": kwargs.get("compression", "tif"),
+            "quality": kwargs.get("quality", 100),
+            "filepath": filepath,
+        }
+        images = Playblast.FrameByFrame(**inputs)
+        return images[-1]

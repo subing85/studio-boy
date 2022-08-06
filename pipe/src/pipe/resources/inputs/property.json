@@ -1,0 +1,180 @@
+{
+    "copyright": "Copyright (c) 2022, https:://www.subins-toolkits.com All rights reserved.",
+    "author": "Author: Subin. Gopi (subing85@gmail.com).",
+    "header": "Studio-Pipe Project Management in-house Tool.",
+    "lastModified": "2022:January:04:Tuesday-04:52:06:PM.",
+    "warning": "All changes made in this file will be lost!.",
+    "description": "inputs of the project categories.",
+    "enable": true,
+    "type": "property",
+    "data": [
+        {
+            "filed":  {
+                "common": "project.name",
+                "AssetVersion": "task.project.name",
+                "Kind": "parent.project.name"
+                },
+            "display-name": null,
+            "order": 1,
+            "enable": true,
+            "fontsize": 24,
+            "childType": "icon",
+            "childFiled": {
+                "common": "project.thumbnail_url.url",
+                "AssetVersion":"task.project.thumbnail_url.url",
+                "Kind": "parent.thumbnail_url.url"
+                },
+            "childIconsize": [
+                192,
+                108
+            ],
+            "childValue": "unknown-project"
+        },
+        {
+            "display-name": "Header",
+            "order": 2,
+            "enable": true,
+            "childType": "lineEdit",
+            "childFiled": {
+                "common": "link"
+                },
+            "childValue": null
+        },
+        {
+            "display-name": "Name",
+            "order": 3,
+            "enable": true,
+            "childType": "lineEdit",
+            "childFiled": {
+                "common": "name"
+                },
+            "childValue": null
+        },
+        {
+            "display-name": null,
+            "type": "label",
+            "order": 4,
+            "enable": true,
+            "childType": "icon",
+            "childFiled": {
+                "common": "thumbnail_url.url"
+                },
+            "childIconsize": [
+                192,
+                108
+            ],
+            "childValue": null
+        },
+        {
+            "childFiled": "id",
+            "display-name": "ID",
+            "order": 5,
+            "enable": true,
+            "childType": "lineEdit",
+            "childFiled": {
+                "common": "id"
+                },
+            "childValue": null
+        },
+        {
+            "display-name": "Entity Type",
+            "order": 6,
+            "enable": true,
+            "childType": "lineEdit",
+            "childFiled": {
+                "common": "entity_type"
+                },
+            "childValue": null
+        },
+        {
+            "display-name": "Status",
+            "order": 7,
+            "enable": true,
+            "childType": "lineEdit",
+            "childFiled": {
+                "common": "status.name"
+                },
+            "childValue": null
+        },
+        {
+            "display-name": "Priority",
+            "order": 8,
+            "enable": true,
+            "childType": "lineEdit",
+            "childFiled": {
+                "common": "priority.name"
+                },
+            "childValue": null
+        },
+        {
+            "display-name": "Created-by",
+            "order": 9,
+            "enable": true,
+            "childType": "lineEdit",
+            "childFiled": {
+                "common": "created_by.username"
+                },
+            "childValue": null
+        },
+        {
+            "display-name": "Created-At",
+            "order": 10,
+            "enable": true,
+            "childType": "lineEdit",
+            "childFiled": {
+                "common": "created_at"
+                },
+            "childValue": null
+        },
+        {
+            "display-name": "Start-by",
+            "order": 11,
+            "enable": true,
+            "childType": "lineEdit",
+            "childFiled": {
+                "common": "metadata.start-by"
+                },
+            "childValue": null
+        },
+        {
+            "display-name": "Start-At",
+            "order": 12,
+            "enable": true,
+            "childType": "lineEdit",
+            "childFiled": {
+                "common": "metadata.start-at"
+                },
+            "childValue": null
+        },
+        {
+            "display-name": "Released-by",
+            "order": 13,
+            "enable": true,
+            "childType": "lineEdit",
+            "childFiled": {
+                "common": "metadata.released-by"
+                },
+            "childValue": null
+        },
+        {
+            "display-name": "Released-At",
+            "order": 14,
+            "enable": true,
+            "childType": "lineEdit",
+            "childFiled": {
+                "common": "metadata.released-at"
+                },
+            "childValue": null
+        },
+        {
+            "display-name": "Description",
+            "order": 15,
+            "enable": true,
+            "childType": "textEdit",
+            "childFiled": {
+                "common": "description"
+                },
+            "childValue": null
+        }
+    ]
+}

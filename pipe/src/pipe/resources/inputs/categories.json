@@ -1,0 +1,236 @@
+{
+    "copyright": "Copyright (c) 2022, https:://www.subins-toolkits.com All rights reserved.",
+    "author": "Author: Subin. Gopi (subing85@gmail.com).",
+    "header": "Studio-Pipe Project Management in-house Tool.",
+    "lastModified": "2022:January:04:Tuesday-04:52:06:PM.",
+    "warning": "All changes made in this file will be lost!.",
+    "description": "inputs of the project categories.",
+    "enable": true,
+    "type": "categories",
+    "data": [
+        {
+            "name": "assets",
+            "display-name": "Assets",
+            "order": 1,
+            "type": "Folder",
+            "field": "name",
+            "enable": true,
+            "fontsize": 16,
+            "color": [
+                106,
+                53,
+                159
+            ],
+            "parameter": [
+                {
+                    "name": "name",
+                    "display-name": "Name",
+                    "field": "name",
+                    "default": "Name",
+                    "primary": true,
+                    "fontsize": 14,
+                    "color": [
+                        170,
+                        85,
+                        255
+                    ]
+                },
+                {
+                    "name": "template",
+                    "display-name": "Template",
+                    "field": "metadata.taskTemplate",
+                    "fieldchild": "name",
+                    "default": null,
+                    "primary": true
+                },
+                {
+                    "name": "type",
+                    "display-name": "Type",
+                    "field": "type.name",
+                    "default": null,
+                    "primary": true
+                },
+                {
+                    "name": "description",
+                    "display-name": "Description",
+                    "field": "description",
+                    "default": "",
+                    "primary": true
+                }
+            ]
+        },
+        {
+            "name": "sequence",
+            "display-name": "Sequence",
+            "order": 2,
+            "type": "Folder",
+            "field": "name",
+            "enable": true,
+            "fontsize": 16,
+            "color": [
+                191,
+                64,
+                0
+            ],
+            "parameter": [
+                {
+                    "name": "name",
+                    "display-name": "Name",
+                    "field": "name",
+                    "default": "Name",
+                    "primary": true,
+                    "fontsize": 15,
+                    "color": [
+                        255,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "name": "template",
+                    "display-name": "Template",
+                    "field": "metadata.taskTemplate",
+                    "fieldchild": "name",
+                    "default": "3D",
+                    "primary": true
+                },
+                {
+                    "name": "fps",
+                    "display-name": "FPS",
+                    "field": "custom_attributes.fps",
+                    "default": "25",
+                    "itemData": true,
+                    "primary": true
+                },
+                {
+                    "name": "fstart",
+                    "display-name": "Start Frame",
+                    "field": "custom_attributes.fstart",
+                    "default": 1001,
+                    "primary": true
+                },
+                {
+                    "name": "fend",
+                    "display-name": "End Frame",
+                    "field": "custom_attributes.fend",
+                    "default": 1025,
+                    "primary": true
+                },
+                {
+                    "name": "description",
+                    "display-name": "Description",
+                    "field": "description",
+                    "default": null,
+                    "primary": true
+                },
+                {
+                    "name": "assembly",
+                    "display-name": "Assembly",
+                    "field": "metadata.sceneAssembly",
+                    "fieldchild": "assets",
+                    "key": "assets",
+                    "default": null,
+                    "primary": false,
+                    "fontsize": 14,
+                    "color": [
+                        170,
+                        85,
+                        255
+                    ]
+                }
+            ],
+            "children": [
+                {
+                    "name": "shots",
+                    "display-name": "Shots",
+                    "order": 1,
+                    "type": "Folder",
+                    "field": "name",
+                    "enable": true,
+                    "fontsize": 14,
+                    "color": [
+                        [
+                            255,
+                            85,
+                            0
+                        ]
+                    ],
+                    "parameter": [
+                        {
+                            "name": "name",
+                            "display-name": "Name",
+                            "field": "name",
+                            "default": "Name",
+                            "primary": true,
+                            "fontsize": 15,
+                            "color": [
+                                255,
+                                85,
+                                0
+                            ]
+                        },
+                        {
+                            "name": "template",
+                            "display-name": "Template",
+                            "field": "metadata.taskTemplate",
+                            "fieldchild": "name",
+                            "default": "3D",
+                            "primary": true
+                        },
+                        {
+                            "name": "fps",
+                            "display-name": "FPS",
+                            "field": "custom_attributes.fps",
+                            "default": "25",
+                            "primary": true
+                        },
+                        {
+                            "name": "fstart",
+                            "display-name": "Start Frame",
+                            "field": "custom_attributes.fstart",
+                            "default": 1001,
+                            "primary": true
+                        },
+                        {
+                            "name": "fend",
+                            "display-name": "End Frame",
+                            "field": "custom_attributes.fend",
+                            "default": 1025,
+                            "primary": true
+                        },
+                        {
+                            "name": "description",
+                            "display-name": "Description",
+                            "field": "description",
+                            "default": null,
+                            "primary": true
+                        },
+                        {
+                            "name": "assembly",
+                            "display-name": "Assembly",
+                            "field": "metadata.sceneAssembly",
+                            "fieldchild": "assets",
+                            "parent": true,
+                            "default": null,
+                            "primary": false,
+                            "fontsize": 14,
+                            "color": [
+                                170,
+                                85,
+                                255
+                            ]
+                        },
+                        {
+                            "name": "sequence",
+                            "display-name": "Sequence",
+                            "field": "parent.name",
+                            "fieldSuffix": true,
+                            "default": null,
+                            "primary": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "copyright": "Copyright (c) 2022, https:://www.subins-toolkits.com All rights reserved.",
+    "author": "Author: Subin. Gopi (subing85@gmail.com).",
+    "header": "Studio-Pipe Project Management in-house Tool.",
+    "lastModified": "2022:January:04:Tuesday-04:53:37:PM.",
+    "warning": "All changes made in this file will be lost!.",
+    "description": "inputs of the user discipline.",
+    "enable": true,
+    "type": "discipline",
+    "data": [
+        {
+            "name": "Administrator",
+            "order": 1,
+            "type": "PROJECT",
+            "display-name": "Administrator",
+            "privilege": "super-user",
+            "trigger": [
+                "Start",
+                "Submit",
+                "Approved",
+                "Publish"
+            ],
+            "color": [
+                170,
+                0,
+                127
+            ],
+            "enable": true
+        },
+        {
+            "name": "Project Manager",
+            "order": 2,
+            "type": "PROJECT",
+            "display-name": "Project Manager",
+            "privilege": "super-user",
+            "trigger": [
+                "Start",
+                "Submit",
+                "Approved",
+                "Publish"
+            ],
+            "color": [
+                102,
+                102,
+                153
+            ],
+            "enable": true
+        },
+        {
+            "name": "User",
+            "order": 3,
+            "type": "PROJECT",
+            "display-name": "User",
+            "privilege": "guest-user",
+            "trigger": [
+                "Start",
+                "Submit"
+            ],
+            "color": [
+                0,
+                126,
+                92
+            ],
+            "enable": true
+        },
+        {
+            "name": "Restricted User",
+            "order": 4,
+            "type": "PROJECT",
+            "display-name": "Restricted User",
+            "privilege": "guest-user",
+            "trigger": [
+                "Start",
+                "Submit"
+            ],
+            "color": [
+                170,
+                85,
+                255
+            ],
+            "enable": true
+        }
+    ]
+}

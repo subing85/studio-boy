@@ -1,0 +1,97 @@
+{
+    "copyright": "Copyright (c) 2022, https:://www.subins-toolkits.com All rights reserved.",
+    "author": "Author: Subin. Gopi (subing85@gmail.com).",
+	"lastModified": "2021:May:16:Sunday-02:32:59:PM",
+	"description": "Show step inputs",
+	"warning": "# WARNING! All changes made in this file will be lost!",
+	"enable": true,
+	"type": "step",
+	"data": [
+		{
+			"name": "art",
+			"order": 1,
+			"display-name": "Art",
+			"category": "assets",
+			"shotgun": "",
+			"enable": true
+		},
+		{
+			"name": "pre-visualize",
+			"order": 2,
+			"display-name": "Pre-Visualize",
+			"category": "editorial",
+			"enable": true
+		},
+		{
+			"name": "model",
+			"order": 3,
+			"display-name": "Model",
+			"category": "assets",
+			"enable": true
+		},
+		{
+			"name": "lookdev",
+			"order": 4,
+			"display-name": "Lookdev",
+			"category": "assets",
+			"enable": true
+		},
+		{
+			"name": "groom",
+			"order": 5,
+			"display-name": "Groom",
+			"category": "assets",
+			"enable": true
+		},		
+		
+		{
+			"name": "puppet",
+			"order": 6,
+			"display-name": "Puppet",
+			"category": "asset",
+			"enable": true
+		},
+		{
+			"name": "rough-layout",
+			"order": 7,
+			"display-name": "Rough-Layout",
+			"category": "editorial",
+			"enable": true
+		},
+		{
+			"name": "layout",
+			"order": 8,
+			"display-name": "Layout",
+			"category": "shot",
+			"enable": true
+		},
+		{
+			"name": "animation",
+			"order": 9,
+			"display-name": "Animation",
+			"category": "scene",
+			"enable": true
+		},
+		{
+			"name": "rendering",
+			"order": 10,
+			"display-name": "Rendering",
+			"category": "scene",
+			"enable": true
+		},
+		{
+			"name": "compositing",
+			"order": 11,
+			"display-name": "Compositing",
+			"category": "scene",
+			"enable": true
+		},
+		{
+			"name": "common",
+			"order": 12,
+			"display-name": "Common",
+			"category": "scene",
+			"enable": true
+		}		
+	]
+}

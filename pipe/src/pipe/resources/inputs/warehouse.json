@@ -1,0 +1,149 @@
+{
+    "copyright": "Copyright (c) 2022, https:://www.subins-toolkits.com All rights reserved.",
+    "author": "Author: Subin. Gopi (subing85@gmail.com).",
+    "header": "Studio-Pipe Project Management in-house Tool.",
+    "lastModified": "2022:January:04:Tuesday-04:52:06:PM.",
+    "warning": "All changes made in this file will be lost!.",
+    "description": "inputs of the project categories.",
+    "enable": true,
+    "type": "categories",
+    "data": [
+        {
+            "name": "assets",
+            "order": 1,
+            "type": "Folder",
+            "enable": true,
+            "fontsize": 16,
+            "color": [
+                106,
+                53,
+                159
+            ],
+            "children": [
+                {
+                    "name": null,
+                    "order": 1,
+                    "type": "AssetBuild",
+                    "enable": true,
+                    "fontsize": 14,
+                    "color": [
+                        170,
+                        85,
+                        255
+                    ],
+                    "children": [
+                        {
+                            "name": null,
+                            "order": 1,
+                            "type": "Task",
+                            "enable": true,
+                            "fontsize": 13,
+                            "color": [
+                                255,
+                                170,
+                                0
+                            ],
+                            "children": [
+                                {
+                                    "order": 1,
+                                    "type": "Kind",
+                                    "enable": true,
+                                    "children": [
+                                        {
+                                            "name": null,
+                                            "order": 1,
+                                            "type": "AssetVersion",
+                                            "enable": true,
+                                            "fontsize": 12,
+                                            "color": [
+                                                170,
+                                                170,
+                                                0
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "sequence",
+            "order": 1,
+            "type": "Folder",
+            "enable": true,
+            "fontsize": 16,
+            "color": [
+                191,
+                64,
+                0
+            ],
+            "children": [
+                {
+                    "name": "sequence",
+                    "display-name": "Sequence",
+                    "order": 1,
+                    "type": "Sequence",
+                    "enable": true,
+                    "fontsize": 15,
+                    "color": [
+                        255,
+                        0,
+                        0
+                    ],
+                    "children": [
+                        {
+                            "name": null,
+                            "order": 1,
+                            "type": "Shot",
+                            "enable": true,
+                            "fontsize": 14,
+                            "color": [
+                                255,
+                                85,
+                                0
+                            ],
+                            "children": [
+                                {
+                                    "name": null,
+                                    "order": 1,
+                                    "type": "Task",
+                                    "enable": true,
+                                    "fontsize": 13,
+                                    "color": [
+                                        255,
+                                        170,
+                                        0
+                                    ],
+                                    "children": [
+                                        {
+                                            "order": 1,
+                                            "type": "Kind",
+                                            "enable": true,
+                                            "children": [
+                                                {
+                                                    "name": null,
+                                                    "order": 1,
+                                                    "type": "AssetVersion",
+                                                    "enable": true,
+                                                    "fontsize": 12,
+                                                    "color": [
+                                                        170,
+                                                        170,
+                                                        0
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

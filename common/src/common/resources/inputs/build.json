@@ -1,0 +1,170 @@
+{
+    "copyright": "Copyright (c) 2022, https:://www.subins-toolkits.com All rights reserved.",
+    "author": "Author: Subin. Gopi (subing85@gmail.com).",
+    "header": "Studio-Pipe Project Management in-house Tool.",
+    "lastModified": "2022:January:04:Tuesday-04:52:06:PM.",
+    "warning": "All changes made in this file will be lost!.",
+    "description": "inputs of the scene build.",
+    "enable": true,
+    "type": "build",
+    "data": [
+        {
+            "order": 1,
+            "name": "Layout",
+            "label": "Layout",
+            "enable": true,
+            "icon": "layout.png",
+            "fontsize": 12,
+            "colorCodes": [
+                {"label": "un-trcked", "color": "#ffff00"},
+                {"label": "removed", "color": "#ff0000"},
+                {"label": "trcked", "color": "#00aaff"},
+                {"label": "scene", "color": "#00ff00"}
+            ],
+            "task": [
+                {
+                    "name": "get",
+                    "event": "common.scripts.tasks.Query"
+                },
+                {
+                    "name": "set",
+                    "event": "common.scripts.tasks.SetupShotAssets"
+                },
+                {
+                    "name": "load",
+                    "event": "layout.scripts.scene.LoadScene"
+                }
+            ],
+            "scene": [
+                {
+                    "name": "build",
+                    "filetype": "mayafile",
+                    "event": "layout.scripts.scene.BuildScene"
+                }
+            ],
+            "items": [
+                {
+                    "order": 1,
+                    "enable": true,
+                    "name": "Asset",
+                    "type": "str",
+                    "field": "name"
+                },
+                
+                {
+                    "order": 2,
+                    "enable": true,
+                    "name": "Type",
+                    "type": "str",
+                    "field": "type.name"
+                },                
+                
+                {
+                    "order": 3,
+                    "enable": true,
+                    "name": "Task",
+                    "type": "enum",
+                    "childField": "children",
+                    "field": "name",
+                    "event": "common.scripts.tasks.Output",
+                    
+                    "dependency": "Type",
+                    
+                    "default": [
+                        {"type": "Camera", "task": "Puppet"},
+                        {"type": "Character", "task": "Puppet"},
+                        {"type": "Prop", "task": "Puppet"},
+                        {"type": "Environment", "task": "Modeling"}
+
+                    ]
+                    
+                },
+                
+                {
+                    "order": 4,
+                    "enable": true,
+                    "name": "Kinds",
+                    "type": "enum",
+                    "field": null,
+                    "default": "publish",
+                    "field": "kinds"
+                },
+                
+                {
+                    "order": 5,
+                    "enable": true,
+                    "name": "Version",
+                    "type": "enum"
+                },
+                {
+                    "order": 6,
+                    "enable": true,
+                    "name": "Location",
+                    "type": "link"
+                }
+            ]
+        },
+        {
+            "order": 1,
+            "name": "Animation",
+            "label": "Animation",
+            "enable": true,
+            "icon": "animation.png",
+            "items": [
+                {
+                    "order": 1,
+                    "enable": true,
+                    "name": "Asset",
+                    "type": "str"
+                },
+                
+                {
+                    "order": 2,
+                    "enable": true,
+                    "name": "Task",
+                    "type": "enum",
+                    "event": "common.scripts.tasks.Output"
+                },
+                {
+                    "order": 3,
+                    "enable": true,
+                    "name": "Version",
+                    "type": "enum",
+                    "event": "common.scripts.tasks.Output"
+                }
+            ]
+        }, 
+        {
+            "order": 1,
+            "name": "Render",
+            "label": "Render",
+            "enable": true,
+            "icon": "render.png",
+            "items": [
+                {
+                    "order": 1,
+                    "enable": true,
+                    "name": "Asset",
+                    "type": "str"
+                },
+                
+                {
+                    "order": 2,
+                    "enable": true,
+                    "name": "Task",
+                    "type": "enum",
+                    "event": "common.scripts.tasks.Output"
+                },
+                {
+                    "order": 3,
+                    "enable": true,
+                    "name": "Version",
+                    "type": "enum",
+                    "event": "common.scripts.tasks.Output"
+                }
+            ]
+        }
+        
+    ]
+    
+}

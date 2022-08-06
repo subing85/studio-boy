@@ -1,0 +1,54 @@
+{
+    "copyright": "Copyright (c) 2022, https:://www.subins-toolkits.com All rights reserved.",
+    "author": "Author: Subin. Gopi (subing85@gmail.com).",
+    "header": "Studio-Pipe Project Management in-house Tool.",
+    "lastModified": "2022:January:04:Tuesday-04:57:45:PM.",
+    "warning": "All changes made in this file will be lost!.",
+    "description": "inputs of the studio-pipe task management tool.",
+    "enable": true,
+    "type": "task-field",
+    "data": [
+        {
+            "display-name": "Task-ID",
+            "field": "id",
+            "type": "str",
+            "order": 1,
+            "enable": true
+        },
+        {
+            "display-name": "Priority",
+            "field": "priority.name",
+            "type": "str",
+            "order": 2,
+            "enable": true
+        },
+        {
+            "display-name": "Status",
+            "field": "status.name",
+            "type": "str",
+            "order": 3,
+            "enable": true
+        },
+        {
+            "display-name": "Start Date",
+            "field": "start_date",
+            "type": "str",
+            "order": 4,
+            "enable": true
+        },
+        {
+            "display-name": "End Data",
+            "field": "end_date",
+            "type": "str",
+            "order": 5,
+            "enable": true
+        },
+        {
+            "display-name": "Description",
+            "field": "description",
+            "type": "text",
+            "order": 6,
+            "enable": true
+        }
+    ]
+}

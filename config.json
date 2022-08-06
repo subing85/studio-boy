@@ -1,0 +1,122 @@
+{
+    "author": "Subin. Gopi (subing85@gmail.com)",
+    "lastModified": "2021:August:02:Monday-09:01:34:PM",
+    "description": "inputs of pipline config",
+    "warning": "# WARNING! All changes made in this file will be lost!",
+    "enable": true,
+    "type": "packages",
+    "data": [
+        {
+            "name": "pipe",
+            "version": "0.0.1",
+			"env": "PIPE-PATH",
+            "order": 1,
+            "enable": true
+        },
+        {
+            "name": "apis",
+            "version": "0.0.1",
+			"env": "APIS-PATH",
+            "order": 2,
+            "enable": true
+        },
+        {
+            "name": "toolkits",
+            "version": "0.0.1",
+			"env": "TOOLKITS-PATH",
+            "order": 3,
+            "enable": true
+        },
+        {
+            "name": "startup",
+            "version": "0.0.1",
+			"env": "STARTUP-PATH",
+            "order": 4,
+            "enable": true
+        },        
+        {
+            "name": "library",
+            "version": "0.0.1",
+			"env": "LIBRARY-PATH",
+            "order": 5,
+            "enable": true
+        },
+        {
+            "name": "common",
+            "version": "0.0.1",
+            "env": "COMMON-PATH",
+            "order": 6,
+            "enable": true
+        },        
+        {
+            "name": "modeling",
+            "version": "0.0.1",
+			"env": "MODELING-PATH",
+            "order": 6,
+            "enable": true
+        },
+        {
+            "name": "lookdev",
+            "version": "0.0.1",
+			"env": "LOOKDEV-PATH",
+            "order": 7,
+            "enable": true
+        },
+        {
+            "name": "groom",
+            "version": "0.0.1",
+			"env": "GROOM-PATH",
+            "order": 8,
+            "enable": true
+        },
+        {
+            "name": "puppet",
+            "version": "0.0.1",
+			"env": "PUPPET-PATH",
+            "order": 9,
+            "enable": true
+        },
+        {
+            "name": "layout",
+            "version": "0.0.1",
+            "env": "LAYOUT-PATH",
+            "order": 10,
+             "enable": true
+        },        
+        {
+            "name": "animation",
+            "version": "0.0.1",
+			"env": "ANIMATION-PATH",
+            "order": 10,
+            "enable": true
+        },
+        {
+            "name": "rendering",
+            "version": "0.0.1",
+			"env": "RENDERING-PATH",
+            "order": 11,
+            "enable": true
+        },
+        {
+            "name": "compositing",
+            "version": "0.0.1",
+			"env": "COMPOSITING-PATH",
+            "order": 12,
+            "enable": true
+        },
+        {
+            "name": "resources",
+            "version": "0.0.1",
+            "env": "RESOURCES-PATH",
+            "order": 13,
+            "enable": true
+        },
+        {
+            "name": "test",
+            "version": "0.0.1",
+            "env": "TEST-PATH",
+            "order": 14,
+            "enable": true
+        }
+    ]
+}

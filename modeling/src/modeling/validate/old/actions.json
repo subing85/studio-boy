@@ -1,0 +1,51 @@
+{
+    "copyright": "Copyright (c) 2022, https:://www.subins-toolkits.com All rights reserved.",
+    "author": "Author: Subin. Gopi (subing85@gmail.com).",
+	"lastModified": "2021:July:22:Thursday-01:28:07:PM",
+	"description": "inputs of model validation",
+	"warning": "# WARNING! All changes made in this file will be lost!",
+	"enable": true,
+	"type": "tool",
+	"data": [
+		{
+			"name": "Name-clash",
+			"action": "modeling.scripts.nameclash",
+			"enable": true
+		},
+		{
+			"name": "History",
+			"action": "modeling.scripts.history",
+			"enable": true
+		},
+		{
+			"name": "Hierarchy",
+			"action": "modeling.scripts.hierarchy",
+			"enable": true
+		},
+		{
+			"name": "Channel Box Attribute value isDefault",
+			"action": "modeling.scripts.isdefault",
+			"enable": true
+		},
+		{
+			"name": "Geometry-Transformation isLocked",
+			"action": "modeling.scripts.islocked",
+			"enable": true
+		},
+		{
+			"name": "isDefault-Shader assign to All Geometry",
+			"action": "modeling.scripts.geometryshader",
+			"enable": true
+		},
+		{
+			"name": "isInvalid Shader Exists",
+			"action": "modeling.scripts.invalidshaders",
+			"enable": true
+		},		
+		{
+			"name": "isAnimtion Exists",
+			"action": "modeling.scripts.isanimation",
+			"enable": true
+		}
+	]
+}

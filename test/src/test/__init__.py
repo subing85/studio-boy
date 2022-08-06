@@ -1,0 +1,2 @@
+REPOSITORY = "tests"
+BYPASS = True

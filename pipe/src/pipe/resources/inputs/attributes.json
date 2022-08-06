@@ -1,0 +1,469 @@
+{
+    "copyright": "Copyright (c) 2022, https:://www.subins-toolkits.com All rights reserved.",
+    "author": "Author: Subin. Gopi (subing85@gmail.com).",
+    "header": "Studio-Pipe Project Management in-house Tool.",
+    "lastModified": "2022:January:04:Tuesday-05:00:03:PM.",
+    "warning": "All changes made in this file will be lost!.",
+    "description": "inputs of the ftrack custom attributes.",
+    "enable": true,
+    "type": "attributes",
+    "data": [
+        {
+            "enable": true,
+            "order": 1,
+            "replace": true,
+            "sort" : 0,
+            "group" : null,
+            "label": "enable",
+            "key": "enable",
+            "default": true,
+            "type": "boolean",
+            "entity_type": "task",
+            "object_type": "Asset Build",
+            "is_hierarchical": false,
+            "project_id": null,
+            "read_security_roles": [
+                "Restricted User",
+                "Administrator",
+                "Project Manager",
+                "API",
+                "User"
+            ],
+            "write_security_roles": [
+                "Administrator",
+                "Project Manager",
+                "API"
+            ]
+        },
+        {
+            "enable": true,
+            "order": 2,
+            "replace": true,
+            "sort" : 1,
+            "group" : null,
+            "label": "taskTemplate",
+            "key": "taskTemplate",
+            "default": "",
+            "type": "text",
+            "entity_type": "task",
+            "object_type": "Asset Build",
+            "is_hierarchical": false,
+            "project_id": null,
+            "read_security_roles": [
+                "Restricted User",
+                "Administrator",
+                "Project Manager",
+                "API",
+                "User"
+            ],
+            "write_security_roles": [
+                "Administrator",
+                "Project Manager",
+                "API"
+            ],
+            "config": {"markdown": false}
+        },
+        {
+            "enable": true,
+            "order": 3,
+            "replace": true,
+            "sort" : 0,
+            "group" : null,
+            "label": "enable",
+            "key": "enable",
+            "default": true,
+            "type": "boolean",
+            "entity_type": "task",
+            "object_type": "Sequence",
+            "is_hierarchical": false,
+            "project_id": null,
+            "read_security_roles": [
+                "Restricted User",
+                "Administrator",
+                "Project Manager",
+                "API",
+                "User"
+            ],
+            "write_security_roles": [
+                "Administrator",
+                "Project Manager",
+                "API"
+            ]
+        },
+        {
+            "enable": true,
+            "order": 4,
+            "replace": true,
+            "sort" : 1,
+            "group" : null,
+            "label": "fps",
+            "key": "fps",
+            "default": "25",
+            "type": "number",
+            "entity_type": "task",
+            "object_type": "Sequence",
+            "is_hierarchical": false,
+            "project_id": null,
+            "read_security_roles": [
+                "Restricted User",
+                "Administrator",
+                "Project Manager",
+                "API",
+                "User"
+            ],
+            "write_security_roles": [
+                "Administrator",
+                "Project Manager",
+                "API"
+            ],
+            "config": {"isdecimal": false}
+        },
+        {
+            "enable": true,
+            "order": 5,
+            "replace": true,
+            "sort" : 2,
+            "group" : null,
+            "label": "Frame start",
+            "key": "fstart",
+            "default": "1001",
+            "type": "number",
+            "entity_type": "task",
+            "object_type": "Sequence",
+            "is_hierarchical": false,
+            "project_id": null,
+            "read_security_roles": [
+                "Restricted User",
+                "Administrator",
+                "Project Manager",
+                "API",
+                "User"
+            ],
+            "write_security_roles": [
+                "Administrator",
+                "Project Manager",
+                "API"
+            ],
+            "config": {"isdecimal": false}
+        },
+        {
+            "enable": true,
+            "order": 6,
+            "replace": true,
+            "sort" : 3,
+            "group" : null,
+            "label": "Frame end",
+            "key": "fend",
+            "default": "1001",
+            "type": "number",
+            "entity_type": "task",
+            "object_type": "Sequence",
+            "is_hierarchical": false,
+            "project_id": null,
+            "read_security_roles": [
+                "Restricted User",
+                "Administrator",
+                "Project Manager",
+                "API",
+                "User"
+            ],
+            "write_security_roles": [
+                "Administrator",
+                "Project Manager",
+                "API"
+            ],
+            "config": {"isdecimal": false}
+        },
+        {
+            "enable": true,
+            "order": 7,
+            "replace": true,
+            "sort" : 4,
+            "group" : null,
+            "label": "Frame duration",
+            "key": "duration",
+            "default": "{self.fend - self.fstart + 1}",
+            "type": "expression",
+            "entity_type": "task",
+            "object_type": "Sequence",
+            "is_hierarchical": false,
+            "project_id": null,
+            "read_security_roles": [
+                "Restricted User",
+                "Administrator",
+                "Project Manager",
+                "API",
+                "User"
+            ],
+            "write_security_roles": [
+                "Administrator",
+                "Project Manager",
+                "API"
+            ],
+            "config": {"exprType": "number"}
+        },
+        {
+            "enable": true,
+            "order": 8,
+            "replace": true,
+            "sort" : 5,
+            "group" : null,
+            "label": "sceneAssembly",
+            "key": "sceneAssembly",
+            "default": "",
+            "type": "text",
+            "entity_type": "task",
+            "object_type": "Sequence",
+            "is_hierarchical": false,
+            "project_id": null,
+            "read_security_roles": [
+                "Restricted User",
+                "Administrator",
+                "Project Manager",
+                "API",
+                "User"
+            ],
+            "write_security_roles": [
+                "Administrator",
+                "Project Manager",
+                "API"
+            ],
+            "config": {"markdown": false}
+        },
+        
+        
+        
+        
+
+        {
+            "enable": true,
+            "order": 9,
+            "replace": true,
+            "sort" : 0,
+            "group" : null,
+            "label": "enable",
+            "key": "enable",
+            "default": true,
+            "type": "boolean",
+            "entity_type": "task",
+            "object_type": "Shot",
+            "is_hierarchical": false,
+            "project_id": null,
+            "read_security_roles": [
+                "Restricted User",
+                "Administrator",
+                "Project Manager",
+                "API",
+                "User"
+            ],
+            "write_security_roles": [
+                "Administrator",
+                "Project Manager",
+                "API"
+            ]
+        },
+        {
+            "enable": true,
+            "order": 10,
+            "replace": true,
+            "sort" : 1,
+            "group" : null,
+            "label": "taskTemplate",
+            "key": "taskTemplate",
+            "default": "",
+            "type": "text",
+            "entity_type": "task",
+            "object_type": "Shot",
+            "is_hierarchical": false,
+            "project_id": null,
+            "read_security_roles": [
+                "Restricted User",
+                "Administrator",
+                "Project Manager",
+                "API",
+                "User"
+            ],
+            "write_security_roles": [
+                "Administrator",
+                "Project Manager",
+                "API"
+            ],
+            "config": {"markdown": false}
+        },
+
+        {
+            "enable": true,
+            "order": 11,
+            "replace": true,
+            "sort" : 2,
+            "group" : null,
+            "label": "fps",
+            "key": "fps",
+            "default": "25",
+            "type": "number",
+            "entity_type": "task",
+            "object_type": "Shot",
+            "is_hierarchical": false,
+            "project_id": null,
+            "read_security_roles": [
+                "Restricted User",
+                "Administrator",
+                "Project Manager",
+                "API",
+                "User"
+            ],
+            "write_security_roles": [
+                "Administrator",
+                "Project Manager",
+                "API"
+            ],
+            "config": {"isdecimal": false}
+        },
+
+        {
+            "enable": true,
+            "order": 12,
+            "replace": false,
+            "sort" : 3,
+            "group" : null,
+            "label": "Frame start",
+            "key": "fstart",
+            "default": "1001",
+            "type": "number",
+            "entity_type": "task",
+            "object_type": "Shot",
+            "is_hierarchical": false,
+            "project_id": null,
+            "read_security_roles": [
+                "Restricted User",
+                "Administrator",
+                "Project Manager",
+                "API",
+                "User"
+            ],
+            "write_security_roles": [
+                "Administrator",
+                "Project Manager",
+                "API"
+            ],
+            "config": {"isdecimal": false}
+        },
+        {
+            "enable": true,
+            "order": 13,
+            "replace": false,
+            "sort" : 4,
+            "group" : null,
+            "label": "Frame end",
+            "key": "fend",
+            "default": "1001",
+            "type": "number",
+            "entity_type": "task",
+            "object_type": "Shot",
+            "is_hierarchical": false,
+            "project_id": null,
+            "read_security_roles": [
+                "Restricted User",
+                "Administrator",
+                "Project Manager",
+                "API",
+                "User"
+            ],
+            "write_security_roles": [
+                "Administrator",
+                "Project Manager",
+                "API"
+            ],
+            "config": {"isdecimal": false}
+        },
+        
+        {
+            "enable": true,
+            "order": 14,
+            "replace": false,
+            "sort" : 5,
+            "group" : null,
+            "label": "Frame duration",
+            "key": "duration",
+            "default": "{self.fend - self.fstart + 1}",
+            "type": "expression",
+            "entity_type": "task",
+            "object_type": "Shot",
+            "is_hierarchical": false,
+            "project_id": null,
+            "read_security_roles": [
+                "Restricted User",
+                "Administrator",
+                "Project Manager",
+                "API",
+                "User"
+            ],
+            "write_security_roles": [
+                "Administrator",
+                "Project Manager",
+                "API"
+            ],
+            "config": {"exprType": "number"}
+        },
+
+        {
+            "enable": true,
+            "order": 15,
+            "replace": false,
+            "sort" : 6,
+            "group" : null,
+            "label": "Frame handles",
+            "key": "handles",
+            "default": 0,
+            "type": "number",
+            "entity_type": "task",
+            "object_type": "Shot",
+            "is_hierarchical": false,
+            "project_id": null,
+            "read_security_roles": [
+                "Restricted User",
+                "Administrator",
+                "Project Manager",
+                "API",
+                "User"
+            ],
+            "write_security_roles": [
+                "Administrator",
+                "Project Manager",
+                "API"
+            ],
+            "config": {"isdecimal": false}
+        },
+
+
+
+        {
+            "enable": true,
+            "order": 16,
+            "replace": true,
+            "sort" : 7,
+            "group" : null,
+            "label": "sceneAssembly",
+            "key": "sceneAssembly",
+            "default": "",
+            "type": "text",
+            "entity_type": "task",
+            "object_type": "Shot",
+            "is_hierarchical": false,
+            "project_id": null,
+            "read_security_roles": [
+                "Restricted User",
+                "Administrator",
+                "Project Manager",
+                "API",
+                "User"
+            ],
+            "write_security_roles": [
+                "Administrator",
+                "Project Manager",
+                "API"
+            ],
+            "config": {"markdown": false}
+        }
+    ]
+}

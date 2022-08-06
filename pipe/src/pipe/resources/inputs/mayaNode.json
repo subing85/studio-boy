@@ -1,0 +1,194 @@
+{
+    "copyright": "Copyright (c) 2022, https:://www.subins-toolkits.com All rights reserved.",
+    "author": "Author: Subin. Gopi (subing85@gmail.com).",
+    "header": "Studio-Pipe Project Management in-house Tool.",
+    "lastModified": "2022:January:04:Tuesday-04:54:40:PM.",
+    "warning": "All changes made in this file will be lost!.",
+    "description": "inputs for maya pipe node.",
+    "enable": true,
+    "type": "",
+    "data": [
+        {
+            "label": "asset",
+            "enable": true,
+            "attributes": [
+                {
+                    "name": "project",
+                    "fn": "project",
+                    "sn": "pr",
+                    "enable": true,
+                    "type": "str",
+                    "field": "Task.project.name"
+                },
+                {
+                    "name": "category",
+                    "fn": "category",
+                    "sn": "cg",
+                    "enable": true,
+                    "type": "str",
+                    "field": "Task.category"
+                },
+                {
+                    "name": "entityName",
+                    "fn": "entityName",
+                    "sn": "en",
+                    "enable": true,
+                    "type": "str",
+                    "field": "Task.entity.name"
+                },
+                {
+                    "name": "entityId",
+                    "fn": "entityId",
+                    "sn": "ei",
+                    "enable": true,
+                    "type": "str",
+                    "field": "Task.entity.id"
+                },
+                {
+                    "name": "taskName",
+                    "fn": "taskName",
+                    "sn": "tn",
+                    "enable": true,
+                    "type": "str",
+                    "field": "Task.name"
+                },
+                {
+                    "name": "taskId",
+                    "fn": "taskId",
+                    "sn": "ti",
+                    "enable": true,
+                    "type": "str",
+                    "field": "Task.id"
+                },
+                {
+                    "name": "assetName",
+                    "fn": "assetName",
+                    "sn": "an",
+                    "enable": true,
+                    "type": "str",
+                    "field": "AssetVersion.asset-name"
+                },
+                {
+                    "name": "assetId",
+                    "fn": "assetId",
+                    "sn": "ai",
+                    "enable": true,
+                    "type": "str",
+                    "field": "AssetVersion.asset-id"
+                },
+                {
+                    "name": "kind",
+                    "fn": "kind",
+                    "sn": "kd",
+                    "enable": true,
+                    "type": "str",
+                    "field": "metadata.kind"
+                },
+                {
+                    "name": "version",
+                    "fn": "version",
+                    "sn": "vr",
+                    "enable": true,
+                    "type": "str",
+                    "field": "metadata.version"
+                },
+                {
+                    "name": "versionId",
+                    "fn": "versionId",
+                    "sn": "vi",
+                    "enable": true,
+                    "type": "str",
+                    "field": "AssetVersion.id"
+                },
+                {
+                    "name": "filename",
+                    "fn": "filename",
+                    "sn": "fn",
+                    "enable": true,
+                    "type": "str",
+                    "field": "metadata.filename"
+                },
+                {
+                    "name": "extension",
+                    "fn": "extension",
+                    "sn": "es",
+                    "enable": true,
+                    "type": "str",
+                    "field": "metadata.extension"
+                },
+                {
+                    "name": "releasedAt",
+                    "fn": "releasedAt",
+                    "sn": "ea",
+                    "enable": true,
+                    "type": "str",
+                    "field": "metadata.released-at"
+                },
+                {
+                    "name": "releasedBy",
+                    "fn": "releasedBy",
+                    "sn": "eb",
+                    "enable": true,
+                    "type": "str",
+                    "field": "metadata.released-by"
+                },
+                {
+                    "name": "status",
+                    "fn": "status",
+                    "sn": "ss",
+                    "enable": true,
+                    "type": "str",
+                    "field": "metadata.status"
+                },
+                {
+                    "name": "statusAt",
+                    "fn": "statusAt",
+                    "sn": "sa",
+                    "enable": true,
+                    "type": "str",
+                    "field": "metadata.status-at"
+                },
+                {
+                    "name": "statusBy",
+                    "fn": "statusBy",
+                    "sn": "sb",
+                    "enable": true,
+                    "type": "str",
+                    "field": "metadata.status-by"
+                },
+                {
+                    "name": "assignments",
+                    "fn": "assignments",
+                    "sn": "am",
+                    "enable": true,
+                    "type": "str",
+                    "field": "Task.assignments"
+                },
+                {
+                    "name": "dependency",
+                    "fn": "dependency",
+                    "sn": "dp",
+                    "enable": true,
+                    "type": "str",
+                    "field": "metadata.dependency"
+                },
+                {
+                    "name": "comment",
+                    "fn": "comment",
+                    "sn": "cm",
+                    "enable": true,
+                    "type": "str",
+                    "field": "AssetVersion.comment"
+                },
+                {
+                    "name": "description",
+                    "fn": "description",
+                    "sn": "ds",
+                    "enable": false,
+                    "type": "str",
+                    "field": "Task.description"
+                }
+            ]
+        }
+    ]
+}

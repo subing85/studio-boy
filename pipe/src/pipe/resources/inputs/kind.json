@@ -1,0 +1,81 @@
+{
+    "copyright": "Copyright (c) 2022, https:://www.subins-toolkits.com All rights reserved.",
+    "author": "Author: Subin. Gopi (subing85@gmail.com).",
+    "header": "Studio-Pipe Project Management in-house Tool.",
+    "lastModified": "2022:January:04:Tuesday-04:55:19:PM.",
+    "warning": "All changes made in this file will be lost!.",
+    "description": "inputs of the project kinds.",
+    "enable": true,
+    "type": "kind",
+    "data": [
+        {
+            "name": "work",
+            "order": 1,
+            "display-name": "work",
+            "status": null,
+            "enable": true,
+            "visible": false,
+            "description": "user works folder name",
+            "fontsize": 12,
+            "color": [
+                170,
+                0,
+                255
+            ]
+        },
+        {
+            "name": "local",
+            "order": 2,
+            "display-name": "local",
+            "status": null,
+            "enable": true,
+            "visible": false,
+            "description": "pre submit folder name",
+            "fontsize": 12,
+            "color": [
+                255,
+                0,
+                255
+            ]
+        },
+        {
+            "name": "submit",
+            "order": 3,
+            "display-name": "submit",
+            "status": "Pending Review",
+            "dependencyStatus": [
+                "In progress",
+                "Revise"
+            ],
+            "enable": true,
+            "visible": true,
+            "primary": true,
+            "description": "submit folder name",
+            "fontsize": 12,
+            "color": [
+                85,
+                170,
+                255
+            ]
+        },
+        {
+            "name": "publish",
+            "order": 4,
+            "display-name": "publish",
+            "status": "Completed",
+            "dependencyStatus": [
+                "Approved"
+            ],
+            "enable": true,
+            "visible": true,
+            "primary": true,
+            "description": "publish folder name",
+            "fontsize": 12,
+            "color": [
+                0,
+                170,
+                0
+            ]
+        }
+    ]
+}

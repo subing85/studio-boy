@@ -1,0 +1,290 @@
+{
+    "copyright": "Copyright (c) 2022, https:://www.subins-toolkits.com All rights reserved.",
+    "author": "Author: Subin. Gopi (subing85@gmail.com).",
+    "header": "Studio-Pipe Project Management in-house Tool.",
+    "lastModified": "2022:January:04:Tuesday-04:52:06:PM.",
+    "warning": "All changes made in this file will be lost!.",
+    "description": "inputs of the scene validation.",
+    "enable": true,
+    "type": "bake",
+    "data": [
+        {
+            "order": 1,
+            "name": "Modeling",
+            "label": "Modeling",
+            "enable": true,
+            "icon": "model.png",
+            "items": [
+                {
+                    "order": 1,
+                    "label": "Name-clash",
+                    "icon": "name-clash.png",
+                    "enable": true,
+                    "optional": false,
+                    "check": "common.scripts.nameclash.Validate",
+                    "fix": null
+                },
+                {
+                    "order": 2,
+                    "label": "History",
+                    "enable": true,
+                    "icon": "history.png",
+                    "check": "common.scripts.history.Validate",
+                    "fix": "common.scripts.history.DeleteHistory"
+                },
+                {
+                    "order": 3,
+                    "label": "Hierarchy",
+                    "enable": true,
+                    "icon": "hierarchy.png",
+                    "check": "modeling.scripts.hierarchy.Validate"
+                },
+                {
+                    "order": 4,
+                    "label": "Channel Box Attribute value isDefault",
+                    "enable": true,
+                    "icon": "model.png",
+                    "check": "common.scripts.attribute.IsDefault",
+                    "fix": "common.scripts.attribute.SetDefault"
+                },
+                {
+                    "order": 5,
+                    "label": "Geometry-Transformation isLocked",
+                    "enable": true,
+                    "icon": "model.png",
+                    "check": "common.scripts.attribute.IsLocked",
+                    "fix": "common.scripts.attribute.SetLocked"
+                },
+                {
+                    "order": 6,
+                    "label": "Is-Default-Shader assign to All Geometry",
+                    "enable": true,
+                    "icon": "model.png",
+                    "check": "modeling.scripts.shader.IsDefault",
+                    "fix": "modeling.scripts.shader.SetDefault"
+                },
+                {
+                    "order": 7,
+                    "label": "Is-Animtion Exists",
+                    "enable": true,
+                    "icon": "model.png",
+                    "check": "common.scripts.animCurve.IsExists",
+                    "fix": "common.scripts.animCurve.Delete"
+                }
+            ]
+        },
+        {
+            "order": 2,
+            "name": "Lookdev",
+            "label": "Lookdev",
+            "enable": true,
+            "icon": "lookdev.png",
+            "items": [
+                {
+                    "order": 1,
+                    "label": "Name-clash",
+                    "icon": "name-clash.png",
+                    "enable": true,
+                    "optional": false,
+                    "check": "common.scripts.nameclash.Validate",
+                    "fix": null
+                },
+                {
+                    "order": 2,
+                    "label": "History",
+                    "enable": true,
+                    "icon": "history.png",
+                    "check": "common.scripts.history.Validate",
+                    "fix": "common.scripts.history.DeleteHistory"
+                },
+                {
+                    "order": 3,
+                    "label": "Hierarchy",
+                    "enable": true,
+                    "icon": "hierarchy.png",
+                    "check": "lookdev.scripts.hierarchy.Validate"
+                },
+                {
+                    "order": 4,
+                    "label": "Channel Box Attribute value isDefault",
+                    "enable": true,
+                    "icon": "lookdev.png",
+                    "check": "common.scripts.attribute.IsDefault",
+                    "fix": "common.scripts.attribute.SetDefault"
+                },
+                {
+                    "order": 5,
+                    "label": "Geometry-Transformation isLocked",
+                    "enable": true,
+                    "icon": "lookdev.png",
+                    "check": "common.scripts.attribute.IsLocked",
+                    "fix": "common.scripts.attribute.SetLocked"
+                },
+                {
+                    "order": 6,
+                    "label": "Is-Default-Shader assign to Any Geometry",
+                    "enable": true,
+                    "icon": "lookdev.png",
+                    "check": "lookdev.scripts.shader.IsLookdevShader"
+                },
+                {
+                    "order": 7,
+                    "label": "Is-Broken Shader Exists",
+                    "enable": true,
+                    "icon": "lookdev.png",
+                    "check": "lookdev.scripts.shader.IsBrokenLookdevShader"
+                },
+                {
+                    "order": 8,
+                    "label": "Is-Animtion Exists",
+                    "enable": true,
+                    "icon": "lookdev.png",
+                    "check": "common.scripts.animCurve.IsExists",
+                    "fix": "common.scripts.animCurve.Delete"
+                }
+            ]
+        },
+        {
+            "order": 3,
+            "name": "Groom",
+            "label": "Groom",
+            "enable": true,
+            "icon": "groom.png",
+            "items": [
+                {
+                    "order": 1,
+                    "label": "Name-clash",
+                    "icon": "name-clash.png",
+                    "enable": true,
+                    "optional": false,
+                    "check": "common.scripts.nameclash.Validate",
+                    "fix": null
+                },
+                {
+                    "order": 2,
+                    "label": "History",
+                    "enable": true,
+                    "icon": "history.png",
+                    "check": "common.scripts.history.Validate",
+                    "fix": "common.scripts.history.DeleteHistory"
+                },
+                {
+                    "order": 3,
+                    "label": "Hierarchy",
+                    "enable": true,
+                    "icon": "hierarchy.png",
+                    "check": "groom.scripts.hierarchy.Validate"
+                },
+                {
+                    "order": 4,
+                    "label": "Channel Box Attribute value isDefault",
+                    "enable": true,
+                    "icon": "lookdev.png",
+                    "check": "common.scripts.attribute.IsDefault",
+                    "fix": "common.scripts.attribute.SetDefault"
+                },
+                {
+                    "order": 5,
+                    "label": "Geometry-Transformation isLocked",
+                    "enable": true,
+                    "icon": "lookdev.png",
+                    "check": "common.scripts.attribute.IsLocked",
+                    "fix": "common.scripts.attribute.SetLocked"
+                },
+                {
+                    "order": 6,
+                    "label": "Is-Default-Shader assign to Any Geometry",
+                    "enable": true,
+                    "icon": "lookdev.png",
+                    "check": "lookdev.scripts.shader.IsLookdevShader"
+                },
+                {
+                    "order": 7,
+                    "label": "Is-Broken Shader Exists",
+                    "enable": true,
+                    "icon": "lookdev.png",
+                    "check": "lookdev.scripts.shader.IsBrokenLookdevShader"
+                },
+                {
+                    "order": 8,
+                    "label": "Is-Animtion Exists",
+                    "enable": true,
+                    "icon": "lookdev.png",
+                    "check": "common.scripts.animCurve.IsExists",
+                    "fix": "common.scripts.animCurve.Delete"
+                }
+            ]
+        },
+        {
+            "order": 4,
+            "name": "Puppet",
+            "label": "Puppet",
+            "enable": true,
+            "icon": "puppet.png",
+            "items": [
+                {
+                    "order": 1,
+                    "label": "Name-clash",
+                    "icon": "name-clash.png",
+                    "enable": true,
+                    "optional": false,
+                    "check": "common.scripts.nameclash.Validate",
+                    "fix": null
+                },
+                {
+                    "order": 2,
+                    "label": "Non Deformer History",
+                    "enable": true,
+                    "icon": "history.png",
+                    "check": "common.scripts.history.ValidateNonDeform",
+                    "fix": "common.scripts.history.DeleteNonDeformHistory"
+                },
+                {
+                    "order": 3,
+                    "label": "Hierarchy",
+                    "enable": true,
+                    "icon": "hierarchy.png",
+                    "check": "puppet.scripts.hierarchy.Validate"
+                },
+                {
+                    "order": 4,
+                    "label": "Channel Box Attribute value isDefault",
+                    "enable": true,
+                    "icon": "model.png",
+                    "check": "common.scripts.attribute.IsDefault",
+                    "fix": "common.scripts.attribute.SetDefault"
+                },
+                {
+                    "order": 5,
+                    "label": "Geometry-Transformation isLocked",
+                    "enable": true,
+                    "icon": "model.png",
+                    "check": "common.scripts.attribute.IsLocked",
+                    "fix": "common.scripts.attribute.SetLocked"
+                },
+                {
+                    "order": 6,
+                    "label": "Is-Default-Shader assign to Any Geometry",
+                    "enable": true,
+                    "icon": "lookdev.png",
+                    "check": "lookdev.scripts.shader.IsLookdevShader"
+                },
+                {
+                    "order": 7,
+                    "label": "Is-Broken Shader Exists",
+                    "enable": true,
+                    "icon": "lookdev.png",
+                    "check": "lookdev.scripts.shader.IsBrokenLookdevShader"
+                },
+                {
+                    "order": 8,
+                    "label": "Is-Animtion Exists",
+                    "enable": true,
+                    "icon": "lookdev.png",
+                    "check": "common.scripts.animCurve.IsExists",
+                    "fix": "common.scripts.animCurve.Delete"
+                }
+            ]
+        }
+    ]
+}

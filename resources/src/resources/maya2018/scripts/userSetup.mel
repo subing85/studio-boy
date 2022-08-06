@@ -1,0 +1,6 @@
+print "\n#: Studio Pipe Maya 2018 Startup\n";
+
+//python("from startup.maya2018 import callback");
+python("from startup.maya2018 import setup");
+
+print "\n#: Studio-Pipe Maya 2018 Startup Done!...\n";

@@ -1,0 +1,89 @@
+{
+    "copyright": "Copyright (c) 2022, https:://www.subins-toolkits.com All rights reserved.",
+    "author": "Author: Subin. Gopi (subing85@gmail.com).",
+    "header": "Studio-Pipe Project Management in-house Tool.",
+    "lastModified": "2022:January:04:Tuesday-05:03:02:PM.",
+    "warning": "All changes made in this file will be lost!.",
+    "description": "inputs of the project status.",
+    "enable": true,
+    "type": "status",
+    "data": [
+        {
+            "name": "Not started",
+            "order": 1,
+            "type": "NOT_STARTED",
+            "dependency": [
+                "In progress"
+            ],
+            "trigger": "Start",
+            "description": "Not yet started",
+            "icon": "status-not-started",
+            "enable": true
+        },
+        {
+            "name": "In progress",
+            "order": 2,
+            "type": "IN_PROGRESS",
+            "dependency": [
+                "Pending Review"
+            ],
+            "trigger": "Submit",
+            "kind": "submit",
+            "description": "Waiting for submission",
+            "icon": "status-waiting",
+            "enable": true
+        },
+        {
+            "name": "Pending Review",
+            "order": 3,
+            "type": "DONE",
+            "dependency": [
+                "Revise",
+                "Approved"
+            ],
+            "note": "submitted",
+            "trigger": "Approved",
+            "kind": "submit",
+            "description": "Waiting for feedback",
+            "icon": "status-waiting-feedback",
+            "enable": true
+        },
+        {
+            "name": "Revise",
+            "order": 4,
+            "type": "IN_PROGRESS",
+            "dependency": [
+                "Pending Review"
+            ],
+            "note": "declined",
+            "trigger": "Submit",
+            "kind": "submit",
+            "description": "declined-submission",
+            "icon": "status-declined-submission",
+            "enable": true
+        },
+        {
+            "name": "Approved",
+            "order": 5,
+            "type": "DONE",
+            "dependency": [
+                "Completed"
+            ],
+            "trigger": "Publish",
+            "kind": "publish",
+            "description": "approved-submission",
+            "icon": "status-approved-submission",
+            "enable": true
+        },
+        {
+            "name": "Completed",
+            "order": 6,
+            "type": "DONE",
+            "dependency": null,
+            "trigger": "Publish",
+            "description": "Published",
+            "icon": "status-published",
+            "enable": true
+        }
+    ]
+}

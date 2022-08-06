@@ -1,0 +1,59 @@
+{
+    "copyright": "Copyright (c) 2022, https:://www.subins-toolkits.com All rights reserved.",
+    "author": "Author: Subin. Gopi (subing85@gmail.com).",
+    "header": "Studio-Pipe Project Management in-house Tool.",
+    "lastModified": "2022:January:16:Sunday-12:26:57:PM.",
+    "warning": "All changes made in this file will be lost!.",
+    "description": "inputs of the shot and sequence.",
+    "enable": true,
+    "type": "shot",
+    "data": [
+        {
+            "name": "timeUnits",
+            "order": 1,
+            "enable": true,
+            "value": "pal",
+            "values": [
+                {
+                    "name": "game",
+                    "value": 15,
+                    "label": "game: 15"
+                },
+                {
+                    "name": "film",
+                    "value": 24,
+                    "label": "film: 24"
+                },
+                {
+                    "name": "pal",
+                    "value": 25,
+                    "label": "pal: 25"
+                },
+                {
+                    "name": "ntsc",
+                    "value": 30,
+                    "label": "ntsc: 30"
+                },
+                {
+                    "name": "show",
+                    "value": 48,
+                    "label": "show: 48"
+                },
+                {
+                    "name": "palf",
+                    "value": 50,
+                    "label": "palf: 50"
+                }
+            ]
+        },
+        {
+            "name": "frameRange",
+            "order": 2,
+            "enable": true,
+            "values": [
+                1001,
+                1025
+            ]
+        }
+    ]
+}
